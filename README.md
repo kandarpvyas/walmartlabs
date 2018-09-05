@@ -4,6 +4,7 @@ Technologies used <BR>
 Spring boot 2.0.3.RELEASE <BR>
 MySQL Workbench 8.0 CE <BR>
 Java JDK 1.8 <BR>
+Angular JS <BR>
 
 To clone this repository into local system , follow below steps <BR>
 
