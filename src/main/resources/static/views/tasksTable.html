@@ -1,0 +1,23 @@
+<div>
+	<h1 class="text-center">Pending Tasks</h1>
+	<table class="table">
+		<tr>
+			<th>StartDate</th>
+			<th>EndDate</th>
+			<th>Priority</th>
+			<!-- <th><button ng-click="sortBy('status')">Status</button> <span
+				class="sortorder" ng-show="propertyName === 'status'"
+				ng-class="{reverse: reverse}"></span></th>
+ -->
+			<th>Duration (Days)</th>
+			<th>Status</th>
+		</tr>
+		<tr ng-repeat="task in tasks.content | orderBy:propertyName:reverse">
+			<td>{{task.formatedStartDate}}</td>
+			<td>{{task.formatedEndDate}}</td>
+			<td>{{task.priority}}</td>
+			<td>{{task.days}}</td>
+			<td>{{task.taskStatus}}</td>
+		</tr>
+	</table>
+</div>

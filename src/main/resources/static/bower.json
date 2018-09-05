@@ -1,0 +1,11 @@
+{
+  "name": "spring-angularjs-pagination",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "bootstrap": "^3.2.0",
+    "angular-route": "latest"
+  },
+  "appPath": "app",
+  "moduleName": "tasksManager"
+}
