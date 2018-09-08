@@ -24,7 +24,7 @@ public class TasksController {
     @SuppressWarnings("deprecation")
     @ResponseBody
     @RequestMapping(value = "/page/{page}/size/{size}", method = RequestMethod.GET)
-    public Page<Tasks> getPersons(@PathVariable("page") int page, @PathVariable("size") int size) {
+    public Page<Tasks> findPageable(@PathVariable("page") int page, @PathVariable("size") int size) {
         PageRequest pageRequest = new PageRequest(page - 1, size, Direction.ASC, "status", "days");
         return tasksService.findAllPageable(pageRequest);
     }
